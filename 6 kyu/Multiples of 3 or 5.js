@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/514b92a657cdc65150000006
+
 function solution(number){
     let sum = 0;
     for(i = 3; i<number; i++){
