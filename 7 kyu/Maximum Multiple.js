@@ -7,10 +7,17 @@ N is divisible by divisor
 N is less than or equal to bound
 N is greater than 0.
 */
+/*
 function maxMultiple(divisor, bound){
   let max = 0;
   for(let i = divisor; i <= bound; i += divisor){
     if(max < i) max = i;
   }
   return max;
+}
+*/
+
+//...and this is what you get when you actually think a bit
+function maxMultiple(divisor, bound){
+  return bound-bound%divisor
 }
