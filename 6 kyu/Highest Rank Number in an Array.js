@@ -19,5 +19,8 @@ function highestRank(arr){
       occurence[a]++;
     }
   })
-  return +Object.entries(occurence).sort((a,b) => b[1] - a[1])[0][0]
+  return +Object.entries(occurence)
+    .sort((a,b) => b[0] - a[0])
+    .sort((a,b) => b[1] - a[1])
+  [0][0];
 }
